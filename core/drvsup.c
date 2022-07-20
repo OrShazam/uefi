@@ -478,6 +478,9 @@ Return Value:
 
         EfiCoreReleaseLock(&EfiProtocolDatabaseLock);
     }
+    else {
+        DriverImageHandleCount = 1;
+    }
 
     //
     // Loop through each driver that has this controller open.
